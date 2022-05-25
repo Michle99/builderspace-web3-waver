@@ -1,0 +1,104 @@
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 64px;
+}
+
+body {
+  background-color: rgb(134, 44, 117);
+}
+
+.dataContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.header {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.bio {
+  text-align: center;
+  color: rgb(224, 208, 208);
+  margin-top: 16px;
+}
+
+.waveButton {
+  cursor: pointer;
+  margin-top: 16px;
+  padding: 8px;
+  border: 0;
+  border-radius: 5px;
+}
+waveButtonDisabled {
+  font-size:1.2em;  
+  border-radius:0px; 
+  background-color: #e4e4e2; 
+  color: #5a5a58;  
+  font-family:Arvo; 
+  cursor: pointer;  
+  margin-top: 16px; 
+  padding: 12px;  
+  border:3px solid #e4e4e2!important;
+}
+.metaMaskIcon { 
+  margin: 0px 12px;    
+  height: 1.6em;    
+  width: 1.6em;    
+  display: inline-block;
+  vertical-align:middle;  
+}
+
+walletButton {
+  font-size:1.2em;
+  border-radius:0px; 
+  background-color: #5a5a58;
+  color: #e4e4e2;  
+  font-family:Arvo;
+  cursor: pointer;  
+  margin-top: 16px;  
+  padding: 12px;
+  border:3px solid #5a5a58!important;
+}
+
+input {
+  color: #5a5a58; 
+  font-size:1.2em;  
+  font-weight:700;  
+  font-family:Arvo;
+  border-radius:0px;
+  background-color: #e4e4e2;  
+  margin-top: 24px;  
+  border:3px solid #5a5a58!important;  
+  padding:16px;  
+  display:block;  
+  border-bottom:1px solid #ccc; 
+  max-width: 100%;
+}
+.waveItem{
+  color: #5a5a58;
+  font-size:1.2em;
+  font-weight:500;
+  font-family:Arvo;
+  border-radius:0px; 
+  background-color: #e4e4e2;
+  margin: 12px 0px;
+  border:3px solid #bfbfbf!important;  
+  padding:16px;
+}
+.waveInfo {
+  font-weight:300;
+  font-size:0.5em;
+  color:#949494;
+}
+.waveMessage {
+  font-weight:300;
+  font-size:1em;
+  margin-top: 8px;
+  color:#5a5a58;
+}
