@@ -1,0 +1,11 @@
+{
+	"name": "Igbo Landing",
+	"description": "The brave igbo souls who chose freedom through death rather bondage through 						slavery. This picture is a depiction of their bravery.",
+	"image" : "https://www.blackpast.org/wp-content/uploads/prodimages/files/Igbo_Landing_by_LaRue_Dee_Williams.jpg"
+}
+
+{
+    "name": "IGBOLANDING",
+    "description": "An NFT about the brave resistance from the igbo people of Nigeria against slavery and a perfect display of freedom.",
+    "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaW5ZTWluIG1lZXQiIHZpZXdCb3g9IjAgMCAzNTAgMzUwIj4KICAgIDxzdHlsZT4uYmFzZSB7IGZpbGw6IHdoaXRlOyBmb250LWZhbWlseTogc2VyaWY7IGZvbnQtc2l6ZTogMTRweDsgfTwvc3R5bGU+CiAgICA8cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJibGFjayIgLz4KICAgIDx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBjbGFzcz0iYmFzZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SUdCT0xBTkRJTkc8L3RleHQ+Cjwvc3ZnPg=="
+}
