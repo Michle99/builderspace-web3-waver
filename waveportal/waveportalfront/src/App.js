@@ -222,13 +222,13 @@ const App = () => {
           />
         )}
 
-        {currentAccount && mining === 0 && (
+        {currentAccount && mining !== 0 && (
           <button className="waveButton" onClick={wave}>
             Wave at Me
           </button>
         )}
 
-        {mining !== 0 && (
+        {mining === 0 && (
           <button disabled className="waveButtonDisabled">
             Pending...
           </button>
