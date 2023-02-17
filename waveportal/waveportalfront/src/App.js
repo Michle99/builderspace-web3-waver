@@ -17,7 +17,7 @@ const App = () => {
    * Create a variable here that holds the contract address after you deploy!
   */
   const [allWaves, setAllWaves] = useState([]);
-  const contractAddress = "0x2c076D0752c398527eE937e0Daf59Ebb60096094";
+  const contractAddress = "0x4C11007fDfd9Dd2625E8e7Ff69d2Ee87C2C52A87";
 
    /*
    * Create a method that gets all waves from your contract
@@ -222,13 +222,13 @@ const App = () => {
           />
         )}
 
-        {currentAccount && mining == 0 && (
+        {currentAccount && mining === 0 && (
           <button className="waveButton" onClick={wave}>
             Wave at Me
           </button>
         )}
 
-        {mining != 0 && (
+        {mining !== 0 && (
           <button disabled className="waveButtonDisabled">
             Pending...
           </button>
