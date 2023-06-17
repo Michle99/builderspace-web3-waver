@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./App.css";
 import { ethers } from 'ethers'
 import abi from "./utils/WavePortal.json";
-import image from "./yinyang.webp";
-import metaMaskIcon from "./metaMask.png";
+import { Spinner } from "./components/Spinner";
 
 
 const App = () => {
@@ -12,12 +11,12 @@ const App = () => {
   */
   const [currentAccount, setCurrentAccount] = useState("");
   const [message, setMessage] = useState("");
-  const [mining, setMining] = useState("");
+  const [mining, setMining] = useState(false);
   /**
    * Create a variable here that holds the contract address after you deploy!
   */
   const [allWaves, setAllWaves] = useState([]);
-  const contractAddress = "0x4C11007fDfd9Dd2625E8e7Ff69d2Ee87C2C52A87";
+  const contractAddress = "0x554C2610f9Df271edD5854904C7ec7Daf5013E96";
 
    /*
    * Create a method that gets all waves from your contract
@@ -141,12 +140,12 @@ const App = () => {
           });
           
           // Set Mining
-          setMining(1);
+          setMining(true);
           console.log("Mining..", waveTxn.hash);
 
           await waveTxn.wait();
           console.log("Mined --", waveTxn.hash);
-          setMining(0);
+          setMining(false);
           setMessage("");
 
           count = await wavePortalContract.getTotalWaves();
@@ -154,11 +153,11 @@ const App = () => {
         
         } else {
           console.log("Ethereum object doesn't exist!");
-          setMining(0);
+          setMining(false);
         }
       } catch (error){
         console.log("There is an error", error);
-        setMining(0);
+        setMining(false);
       }
     }
 
@@ -202,7 +201,7 @@ const App = () => {
     <div className="mainContainer">
       <div className="dataContainer">
         <div className="left">
-            <img className="avatar" src={image} alt="pineapple #7098" width="150" height="150"  />
+            <img className="avatar" />
           </div>
         <div className="header">
         👋 Hey there!
@@ -216,27 +215,29 @@ const App = () => {
         {currentAccount && (
           <input className="input"
             type="text"
-            placeholder="Say whatever you want"
+            placeholder="What's on your mind..."
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           />
         )}
-
-        {currentAccount && mining !== 0 && (
+     
+        {!mining && currentAccount && (
           <button className="waveButton" onClick={wave}>
             Wave at Me
           </button>
         )}
-
-        {mining === 0 && (
-          <button disabled className="waveButtonDisabled">
-            Pending...
-          </button>
+        {" "}
+        {mining && (
+          <div className="m-auto flex justify-center">
+            <Spinner color={"black"} style={{ 
+              height: "25%", marginLeft: "-1rem" }}
+            />
+           </div>
         )}
 
         {!currentAccount && (
           <button className="walletButton" onClick={connectWallet}>
-            <img className="metaMaskIcon" src={metaMaskIcon}/><span className="cell">Connect Wallet</span>
+            <img className=""/><span className="cell">Connect Wallet</span>
           </button>
         )}
 

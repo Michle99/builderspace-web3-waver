@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: rgb(134, 44, 117);
+  background-color: rgb(83, 82, 166);
 }
 
 .dataContainer {
@@ -26,6 +26,7 @@ body {
   text-align: center;
   color: rgb(224, 208, 208);
   margin-top: 16px;
+  margin-bottom: 16px;
 }
 
 .waveButton {
