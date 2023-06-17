@@ -7,12 +7,12 @@
 
 # Description
 
-A web3 wave portal site that displays the list of waves received from visitors. The site was built with solidity and react.js. 
+A web3 wave portal site that displays the list of waves received from visitors. The site was built with solidity and react.js.
 
 # Project Structure
 
 ```
-/waveportal
+/waveportal-backend
   /contracts
   /scripts
 
@@ -21,3 +21,5 @@ A web3 wave portal site that displays the list of waves received from visitors. 
   /components
   /utils
 ```
+
+#
